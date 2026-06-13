@@ -1,0 +1,156 @@
+* {
+
+    margin: 0;
+    
+    
+
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height:100vh;
+    width: 100dvw;
+
+
+}
+
+aside {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 15%;
+    border: 1px solid black;
+    gap: 80px;
+
+
+}
+
+.botaoaside {
+
+    height: 80px;
+    width: 100px;
+    border-radius: 5%;
+
+}
+
+header{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px 20px;
+
+}
+
+h1 {
+
+    flex-grow: 1;
+    text-align: center; 
+    align-content: center;
+
+}
+
+img {
+
+
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    align-content: center;
+
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  
+
+}
+
+input {
+
+    height: 40px;
+    width: auto;
+    align-content: center;
+    
+
+}
+
+section {
+
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+
+}
+
+.conteiner {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.card {
+
+    display: flex;
+    height: 500px;
+    width: 700px;
+    border: 2px solid black;
+    border-radius: 5%;
+
+}
+
+.baixo {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 150px;
+
+}
+
+.avancar {
+
+    height: 60px;
+    width: 100px;
+    border-radius: 5%;
+
+}
+
+.voltar {
+
+    height: 60px;
+    width: 100px;
+    border-radius: 5%;
+
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border: 1px solid black;
+    height: 50px;
+
+}
+
