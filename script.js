@@ -50,5 +50,7 @@ if (tipo === "gerencia") {
     buscarGerencia();
 }
 
-const api = await fetch("http://localhost:8080/api/funcionarios");
+const api = await fetch("https://dummyjson.com/users");
 const funcionarios = await api.json();
+
+const randomimage = await fetch("https://randomuser.me/api/?gender=female");
