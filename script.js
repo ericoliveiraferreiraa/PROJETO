@@ -11,6 +11,7 @@ const index = document.getElementById("index");
 
 const botaoAnterior = document.getElementById("voltar");
 const botaoProximo = document.getElementById("avancar");
+const inputBusca = document.querySelector(".buscarempregado input");
 
 // Índice
 
@@ -89,7 +90,7 @@ async function mostrarFuncionario(indice) {
     img.src = foto;
 
     index.innerText =
-        `${indice + 1} / ${funcionarios.length}`;
+        `${indice + 1}`;
 }
 
 // Botão avançar
@@ -115,6 +116,32 @@ botaoAnterior.addEventListener("click", () => {
         indiceAtual--;
 
         mostrarFuncionario(indiceAtual);
+
+    }
+
+});
+
+const form = document.querySelector(".buscarempregado");
+
+form.addEventListener("submit", (e) => {
+
+    e.preventDefault();
+
+    const id = Number(inputBusca.value);
+
+    const funcionarioIndex = funcionarios.findIndex(
+        funcionario => funcionario.id === id
+    );
+
+    if (funcionarioIndex !== -1) {
+
+        indiceAtual = funcionarioIndex;
+
+        mostrarFuncionario(indiceAtual);
+
+    } else {
+
+        alert("Funcionário não encontrado");
 
     }
 
