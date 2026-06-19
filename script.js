@@ -73,19 +73,19 @@ async function mostrarFuncionario(indice) {
     const foto = await buscarFoto(funcionario.gender);
 
     nome.innerText =
-        `${funcionario.firstName} ${funcionario.lastName}`;
+        `${funcionario.firstName} ${funcionario.lastName}`.toUpperCase();
 
     genero.innerText =
-        `Gênero: ${funcionario.gender}`;
+        `Gênero: ${funcionario.gender}`.toUpperCase();
 
     cargo.innerText =
-        `Cargo: ${funcionario.company.title}`;
+        `Cargo: ${funcionario.company.title}`.toUpperCase();
 
     departamento.innerText =
-        `Departamento: ${funcionario.company.department}`;
+        `Departamento: ${funcionario.company.department}`.toUpperCase();
 
     email.innerText =
-        `Email: ${funcionario.email}`;
+        `Email: ${funcionario.email}`.toUpperCase();
 
     img.src = foto;
 
